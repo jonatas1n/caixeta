@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Mapa The Beatles</title>
+      <link rel="stylesheet" href="/static/css/elements.css" />
+      <link rel="stylesheet" href="/static/css/home/home.css" />
+      <link rel="stylesheet" href="/static/css/home/toast.css" />
+      <link rel="stylesheet" href="/static/css/home/popup.css" />
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  </head>
+<body>
+  <main>
+    <header>
+      <div class="container">
+        <h1>Mapa dos Beatles</h1>
+      </div>
+    </header>
+    <div id="toast">
+      <div class="toast__title"></div>
+      <div class="toast__content container">
+        <div class="">Você acertou!</div>
+      </div>
+    </div>
+    <div id="map"></div>
+  </main>
+  <div id="popup">
+    <div class="popup__header">
+      <div class="close">x</div>
+    </div>
+    <div class="popup__content"></div>
+    <div class="popup__footer">
+      <button>Ok</button>
+    </div>
+  </div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="/static/js/toast.js"></script>
+  <script src="/static/js/map.js"></script>
+</body>
+</html>

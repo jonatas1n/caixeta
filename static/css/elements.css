@@ -1,0 +1,18 @@
+:root {
+  --amar: #F7DC6F;
+  --azul: #3498DB;
+  --lar: #FFA07A;
+  --roxo: #7A288A;
+  --branco: #FFFFFF;
+  --preto: #000000;
+  --amar-cl: #F2C464;
+  --amar-esc: #F5C710;
+  --azul-cl: #68B3C8;
+  --roxo-esc: #5C3C9C;
+}
+
+.container {
+  width: 75%;
+  max-width: 1400px;
+  margin-inline: auto;
+}

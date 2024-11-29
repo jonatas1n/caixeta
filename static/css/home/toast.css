@@ -1,0 +1,24 @@
+#toast {
+  background-color: white;
+  height: 4rem;
+  width: 100%;
+  left: 0;
+  z-index: 900;
+  position: fixed;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  color: black;
+  display: grid;
+  opacity: 0;
+  top: 0;
+  transition: .5s;
+}
+
+#toast.show {
+  top: 3rem;
+  opacity: 1;
+}
+
+.toast__content {
+  margin-top: 2rem;
+}
