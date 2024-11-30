@@ -3,16 +3,19 @@
   top: calc(50% - 15rem);
   left: calc(50% - 15rem);
   width: 30rem;
-  display: none;
+  display: grid;
+  visibility: hidden;
+  opacity: 0;
   z-index: 1000;
   grid-template-rows: auto 3rem;
   border-radius: 2rem;
   background-color: white;
-  transition: .5s;
+  transition: .35s;
 }
 
 #popup.show {
-  display: grid;
+  visibility: visible;
+  opacity: 1;
 }
 
 .popup__header {
