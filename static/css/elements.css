@@ -16,3 +16,17 @@
   max-width: 1400px;
   margin-inline: auto;
 }
+
+img.leaflet-image-layer {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    padding-top: 0;
+  }
+
+  50% {
+    padding-top: .25rem;
+  }
+}
