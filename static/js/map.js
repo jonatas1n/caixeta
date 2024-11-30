@@ -17,8 +17,7 @@ fetch('https://raw.githubusercontent.com/johan/world.geo.json/master/countries.g
       onEachFeature: (feature, layer) => {
         layer.on('click', () => {
           const countryId = feature.id || 'N/A';
-          const countryName = feature.properties.name || 'Desconhecido';
-          openToast(`ID do País: ${countryId}, Nome: ${countryName}`);
+          discoverCountry(countryId);
         });
 
         layer.bindTooltip(feature.properties.name, {

@@ -27,15 +27,19 @@
     <div id="map"></div>
   </main>
   <div id="popup">
-    <div class="popup__header">
-      <div class="close">x</div>
+    <div class="popup__content">
+      <h2 class="country__name"></h2>
+      <img src="" alt="" class="country__flag">
+      <p class="country__curiosity"></p>
     </div>
-    <div class="popup__content"></div>
     <div class="popup__footer">
-      <button>Ok</button>
+      <button onclick="closePopup()">Ok</button>
     </div>
   </div>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="/static/js/visited.js"></script>
+  <script src="/static/js/popup.js"></script>
+  <script src="/static/js/script.js"></script>
   <script src="/static/js/toast.js"></script>
   <script src="/static/js/map.js"></script>
 </body>

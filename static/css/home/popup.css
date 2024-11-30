@@ -3,30 +3,53 @@
   top: calc(50% - 15rem);
   left: calc(50% - 15rem);
   width: 30rem;
-  height: 30rem;
-  display: grid;
+  display: none;
   z-index: 1000;
-  grid-template-rows: 3rem auto 3rem;
+  grid-template-rows: auto 3rem;
   border-radius: 2rem;
   background-color: white;
+  transition: .5s;
+}
+
+#popup.show {
+  display: grid;
 }
 
 .popup__header {
-  display: grid
+  display: grid;
+  padding: .5rem 1rem;
+  align-content: center;
+  justify-content: flex-end;
+}
+
+.popup__content {
+  padding: 1rem;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.popup__content p {
+  font-size: 1.5rem;
 }
 
 .popup__footer {
   display: grid;
-  align-items: center;
-  padding: 1rem;
+  align-content: center;
   justify-content: center;
   border-top: 1px solid var(--roxo-esc);
+  grid-template-columns: 100%;
 }
 
 .popup__footer button {
   justify-content: center;
+  padding: 1rem;
   background-color: transparent;
   font-size: 1.5rem;
-  border: 2px solid var(--roxo-esc);
   border-radius: 1rem;
+  width: 100%;
+  border: none;
+  cursor: pointer;
 }
